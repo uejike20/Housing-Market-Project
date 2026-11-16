@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "housing-market-intelligence"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = ["requests>=2.31,<3", "snowflake-connector-python>=3.10,<5", "prefect>=3,<4", "python-dotenv>=1,<2"]
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff>=0.7,<1", "dbt-snowflake>=1.8,<2"]
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.ruff]
+line-length = 100
