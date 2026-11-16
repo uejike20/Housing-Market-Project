@@ -1,5 +1,6 @@
 """Snowflake transactional upsert; no credentials stored in source control."""
 import os
+
 import snowflake.connector
 
 DDL = """CREATE TABLE IF NOT EXISTS RAW.FRED_MORTGAGE_RATES (

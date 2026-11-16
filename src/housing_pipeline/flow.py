@@ -7,6 +7,7 @@ from time import monotonic
 
 from dotenv import load_dotenv
 from prefect import flow, task
+
 from .ingest import fetch_observations, read_checkpoint, window, write_checkpoint
 from .warehouse import upsert
 

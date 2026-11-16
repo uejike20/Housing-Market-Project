@@ -1,5 +1,6 @@
 from datetime import date
-from housing_pipeline.ingest import normalize, record_key, window, read_checkpoint, write_checkpoint
+
+from housing_pipeline.ingest import normalize, read_checkpoint, record_key, window, write_checkpoint
 
 
 def test_stable_key():
