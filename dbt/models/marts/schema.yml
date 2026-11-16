@@ -1,0 +1,8 @@
+version: 2
+models:
+  - name: mart_monthly_mortgage_rates
+    columns:
+      - name: month
+        data_tests: [not_null, unique]
+      - name: avg_mortgage_rate
+        data_tests: [not_null]

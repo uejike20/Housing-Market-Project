@@ -1,0 +1,12 @@
+version: 2
+sources:
+  - name: raw
+    database: "{{ env_var('SNOWFLAKE_DATABASE') }}"
+    schema: RAW
+    tables:
+      - name: FRED_MORTGAGE_RATES
+        columns:
+          - name: RECORD_KEY
+            data_tests: [not_null, unique]
+          - name: OBSERVATION_DATE
+            data_tests: [not_null]

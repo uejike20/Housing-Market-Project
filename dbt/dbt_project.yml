@@ -1,0 +1,10 @@
+name: housing_intelligence
+version: '1.0.0'
+config-version: 2
+profile: housing_intelligence
+model-paths: ["models"]
+models:
+  housing_intelligence:
+    +materialized: view
+    marts:
+      +materialized: table
